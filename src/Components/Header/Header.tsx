@@ -19,14 +19,15 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
   };
 
   return (
-    <div className="flex flex-row bg-oxfordblue" >
+    <div className="flex flex-row bg-oxfordblue h-24 text-persianorange" >
       <div className="container mx-auto flex flex-row justify-between items-center h-full">
         <div className="logo">
         <img src={Logo} alt="Logo" className="h-auto w-auto"  />
         </div>
+        <h1 className='text-persianorange text-4xl font-semibold'>Lapis Lazuli</h1>
         <div className="menu-toggle">
           {/* Collapsible menu button */}
-          <button onClick={handleMenuToggle}>
+          <button onClick={handleMenuToggle} className='text-persianorange'>
             menu
             <svg
               xmlns="http://www.w3.org/2000/svg"
