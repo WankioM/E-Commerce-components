@@ -19,13 +19,38 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
   };
 
   return (
-    <div className="flex flex-row bg-oxfordblue h-24 text-persianorange" >
-      <div className="container mx-auto flex flex-row justify-between items-center h-full">
-        <div className="logo">
+    <div className="flex flex-row bg-oxfordblue h-28 text-persianorange" >
+      <div className="container mx-auto flex flex-row justify-between items-center h-full p-14">
+        <div className=" w-2/3 flex flex-row gap-1">
         <img src={Logo} alt="Logo" className="h-auto w-auto"  />
-        </div>
         <h1 className='text-persianorange text-4xl font-semibold'>Lapis Lazuli</h1>
+        </div>
+        
+
+        <div className="search">
+          {/* search button */}
+          <button className='bg-slategray rounded-lg bg-opacity-40 flex flex-row  text-sage w-48 md:w-48'>
+          
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-16"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="#C8CC92" // Accent color
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={1}
+                d="M18 18l-4-4m1-3a5 5 0 11-10 0 5 5 0 0110 0z"
+              />
+            </svg>
+          </button>
+        </div>
+
         <div className="menu-toggle">
+
+            
           {/* Collapsible menu button */}
           <button onClick={handleMenuToggle} className='text-persianorange'>
             menu
@@ -47,7 +72,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth={2}
+                  strokeWidth={1}
                   d="M4 6h16M4 12h16m-7 6h7"
                 />
               )}
@@ -55,28 +80,9 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
           </button>
         </div>
         <div className={`menu ${isMenuOpen ? 'open' : ''}`}>
-         <NavBar />
+            {isMenuOpen && <NavBar />}
         </div>
-        <div className="search">
-          {/* Insert your search button here */}
-          <button>
-            search
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-16"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="#C8CC92" // Accent color
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1}
-                d="M18 18l-4-4m1-3a5 5 0 11-10 0 5 5 0 0110 0z"
-              />
-            </svg>
-          </button>
-        </div>
+        
       </div>
     </div>
   );

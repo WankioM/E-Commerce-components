@@ -9,9 +9,20 @@ interface NavBarProps {
 
 const NavBar: React.FC<NavBarProps> = ({}) => {
   return (
-    <div className="navbar">
+    <div className="fixed top-38 right-20 w-1/5 bg-neowhite rounded-md p-3 ">
       {/* Replace this with your Navbar content */}
-      <h1>NavBar</h1>
+     
+      <ul>
+        <li>
+          About
+        </li>
+        <li>
+          Contact Us
+        </li>
+        <li>
+          Shop
+        </li>
+      </ul>
     </div>
   );
 };

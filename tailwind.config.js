@@ -11,6 +11,7 @@ module.exports = {
         sage: '#C8CC92', // accent color
         slategray: '#6E8894',
         rosetaupe: '#A26769',
+        neowhite: '#FFFFFF70',
       },
       fontFamily: {
         sans: ['Roboto', 'sans-serif'], // Example of extending typography
