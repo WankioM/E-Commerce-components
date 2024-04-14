@@ -25,12 +25,15 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
         <img src={Logo} alt="Logo" className="h-auto w-auto"  />
         <h1 className='text-persianorange text-xl font-craketest_light pt-3' >Lapis Lazuli</h1>
         </div>
-        
 
-        <div className="search">
-          {/* search button */}
-          <button className='bg-slategray rounded-lg bg-opacity-40 flex flex-row  text-sage w-48 md:w-56'>
-          
+        <div className='bg-slategray rounded-lg bg-opacity-40 flex flex-row text-sage w-48 md:w-56'>
+          <input 
+            type="text" // Set input type to text
+            placeholder="Search..." // Optional placeholder text
+            className="flex-grow bg-transparent px-4 py-2 m-1 rounded-lg" // Tailwind CSS classes for styling
+
+          />
+          <button className="flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-8 w-16"
@@ -47,6 +50,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
             </svg>
           </button>
         </div>
+
 
         <div className="menu-toggle">
 
