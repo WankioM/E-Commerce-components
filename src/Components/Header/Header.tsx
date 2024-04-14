@@ -52,6 +52,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
 
             
           {/* Collapsible menu button */}
+          
           <button onClick={handleMenuToggle} className='text-persianorange'>
             menu
             <svg
@@ -61,19 +62,12 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
               viewBox="0 0 24 4"
               stroke="#C8CC92" // Accent color
             >
-              {isMenuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
+              {!isMenuOpen && (
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={1}
-                  d="M4 6h16M4 12h16m-7 6h7"
+                  d="M4 6h16M4 12h16"
                 />
               )}
             </svg>

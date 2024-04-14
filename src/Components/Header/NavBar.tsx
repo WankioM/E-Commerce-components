@@ -9,11 +9,11 @@ interface NavBarProps {
 
 const NavBar: React.FC<NavBarProps> = ({}) => {
   return (
-    <div className="fixed top-38 right-20 w-1/5 bg-neowhite rounded-md p-3 ">
+    <div className="fixed top-28 right-16 w-40 bg-neowhite rounded-md p-3 drop-shadow-md">
       {/* Replace this with your Navbar content */}
      
-      <ul>
-        <li>
+      <ul className='text-left'>
+        <li className='text-left' >
           About
         </li>
         <li>
