@@ -1,6 +1,6 @@
 // header.tsx
 
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import './Header.css'; // Import your CSS file for styling
 import NavBar from './NavBar';
 import Logo from '../../Assets/logo.svg';
@@ -12,6 +12,20 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    let timer: NodeJS.Timeout;
+    if (isMenuOpen) {
+      // Set a timeout to automatically close the menu after 5 seconds
+      timer = setTimeout(() => {
+        setIsMenuOpen(false);
+        // Call the parent component's menu toggle function if provided
+        onMenuToggle?.();
+      }, 3000);
+    }
+    return () => clearTimeout(timer); // Clean up the timer on unmount or when isMenuOpen changes
+  }, [isMenuOpen, onMenuToggle]);
+
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
