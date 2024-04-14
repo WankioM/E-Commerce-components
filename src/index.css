@@ -1,6 +1,30 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@font-face {
+  font-family: 'Craketest Light';
+  src: url('../assets/craketest-light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Craketest Medium';
+  src: url('../assets/craketest-medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Craketest Regular';
+  src: url('../assets/craketest-regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Craketest Semibold';
+  src: url('../assets/craketest-semibold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Craketest Bold';
+  src: url('../assets/craketest-bold.otf') format('opentype');
+}
 
 body {
   margin: 0;

@@ -23,7 +23,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
       <div className="container mx-auto flex flex-row justify-between items-center h-full p-14">
         <div className=" w-2/3 flex flex-row gap-1">
         <img src={Logo} alt="Logo" className="h-auto w-auto"  />
-        <h1 className='text-persianorange text-4xl font-semibold'>Lapis Lazuli</h1>
+        <h1 className='text-persianorange text-xl font-libre_baskerville pt-3' >Lapis Lazuli</h1>
         </div>
         
 
