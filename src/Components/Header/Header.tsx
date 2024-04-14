@@ -33,11 +33,11 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
   };
 
   return (
-    <div className="flex flex-row bg-oxfordblue h-28 text-persianorange" >
+    <div className="flex flex-row bg-white h-28 text-oxfordblue drop-shadow-md" >
       <div className="container mx-auto flex flex-row justify-between items-center h-full p-14">
         <div className=" w-2/3 flex flex-row gap-1">
         <img src={Logo} alt="Logo" className="h-auto w-auto"  />
-        <h1 className='text-persianorange text-xl font-craketest_light pt-3' >Lapis Lazuli</h1>
+        <h1 className='text-oxfordblue text-xl font-craketest_light pt-3' >Lapis Lazuli</h1>
         </div>
 
         <div className='bg-slategray rounded-lg bg-opacity-40 flex flex-row text-sage w-48 md:w-56'>
@@ -70,7 +70,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
 
 
           
-          <button onClick={handleMenuToggle} className='text-persianorange font-GlacialIndifference_regular'>
+          <button onClick={handleMenuToggle} className='text-oxfordblue font-GlacialIndifference_regular'>
             Menu
            
           </button>
