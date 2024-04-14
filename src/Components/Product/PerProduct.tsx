@@ -7,9 +7,15 @@ interface PerProductProps {
 
 const PerProduct: React.FC<PerProductProps> = ({}) => {
   return (
-    <div className="navbar">
-      {/* Replace this with your Navbar content */}
-      <h1>NavBar</h1>
+    <div className="flex bg-oxfordblue">
+      <div>
+        Image
+      </div>
+
+      <div>
+        Details
+      </div>
+     
     </div>
   );
 };
