@@ -23,17 +23,17 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
       <div className="container mx-auto flex flex-row justify-between items-center h-full p-14">
         <div className=" w-2/3 flex flex-row gap-1">
         <img src={Logo} alt="Logo" className="h-auto w-auto"  />
-        <h1 className='text-persianorange text-xl font-libre_baskerville pt-3' >Lapis Lazuli</h1>
+        <h1 className='text-persianorange text-xl font-craketest_light pt-3' >Lapis Lazuli</h1>
         </div>
         
 
         <div className="search">
           {/* search button */}
-          <button className='bg-slategray rounded-lg bg-opacity-40 flex flex-row  text-sage w-48 md:w-48'>
+          <button className='bg-slategray rounded-lg bg-opacity-40 flex flex-row  text-sage w-48 md:w-56'>
           
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-16"
+              className="h-8 w-16"
               fill="none"
               viewBox="0 0 24 24"
               stroke="#C8CC92" // Accent color
@@ -50,27 +50,11 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
 
         <div className="menu-toggle">
 
-            
-          {/* Collapsible menu button */}
+
           
-          <button onClick={handleMenuToggle} className='text-persianorange'>
-            menu
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 4"
-              stroke="#C8CC92" // Accent color
-            >
-              {!isMenuOpen && (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={1}
-                  d="M4 6h16M4 12h16"
-                />
-              )}
-            </svg>
+          <button onClick={handleMenuToggle} className='text-persianorange font-GlacialIndifference_regular'>
+            Menu
+           
           </button>
         </div>
         <div className={`menu ${isMenuOpen ? 'open' : ''}`}>

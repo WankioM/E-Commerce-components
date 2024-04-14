@@ -3,28 +3,45 @@
 @import 'tailwindcss/utilities';
 @font-face {
   font-family: 'Craketest Light';
-  src: url('../assets/craketest-light.otf') format('opentype');
+  src: url('./Assets/craketest-light.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Craketest Medium';
-  src: url('../assets/craketest-medium.otf') format('opentype');
+  src: url('./Assets/craketest-medium.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Craketest Regular';
-  src: url('../assets/craketest-regular.otf') format('opentype');
+  src: url('./Assets/craketest-regular.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Craketest Semibold';
-  src: url('../assets/craketest-semibold.otf') format('opentype');
+  src: url('./Assets/craketest-semibold.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Craketest Bold';
-  src: url('../assets/craketest-bold.otf') format('opentype');
+  src: url('./Assets/craketest-bold.otf') format('opentype');
 }
+
+@font-face {
+  font-family: 'GlacialIndifference Bold';
+  src: url('./Assets/GlacialIndifference-Bold.otf') format('opentype');
+}
+
+
+@font-face {
+  font-family: 'GlacialIndifference Italic';
+  src: url('./Assets/GlacialIndifference-Italic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GlacialIndifference Regular';
+  src: url('./Assets/GlacialIndifference-Regular.otf') format('opentype');
+}
+
 
 body {
   margin: 0;

@@ -21,7 +21,10 @@ module.exports = {
         craketest_medium: ['Craketest Medium', 'sans-serif'],
         craketest_regular: ['Craketest Regular', 'sans-serif'],
         craketest_semibold: ['Craketest Semibold', 'sans-serif'],
-        craketest_bold: ['Craketest Bold', 'sans-serif'],
+        GlacialIndifference_bold: ['GlacialIndifference Bold', 'sans-serif'],
+        GlacialIndifference_italic: ['GlacialIndifference Italic', 'sans-serif'],
+        GlacialIndifference_regular:['GlacialIndifference Regular', 'sans-serif']
+        
       },
       },
     },
