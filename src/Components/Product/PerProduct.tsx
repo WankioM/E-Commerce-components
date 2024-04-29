@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, {useState} from 'react';
 import HeartIcon from '../../Assets/heart-solid.svg';
 
 
@@ -19,6 +19,12 @@ const PerProduct: React.FC<PerProductProps> = ({
   productDescription,
   price,
 }) => {
+  const [mainImage, setMainImage] = useState(productImage);
+
+  const handleImageClick = (image: string) => {
+    setMainImage(image);
+  };
+
   return (
     <div className="flex flex-row bg-sage items-center pt-5">
       
@@ -28,10 +34,16 @@ const PerProduct: React.FC<PerProductProps> = ({
         <h2 className='text-4xl text-left font-craketest_regular p-2 pl-44'>{productName}</h2>
         <p className='text-lg text-left font-GlacialIndifference_regular p-2 pl-44'>{price} KES</p>
 
-        <div>
-          <img src='' style={{ maxHeight: '50px', maxWidth: '50px'}}></img>
-          <img src='' style={{ maxHeight: '50px' , maxWidth: '50px'}}></img>
-          <img src='' style={{ maxHeight: '50px' , maxWidth: '50px'}}></img>
+        <div className='flex flex-row p-4 pl-44'>
+        {otherImages.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Product ${index + 2}`}
+              style={{ maxHeight: '50px', maxWidth: '88px', marginRight: '10px' }}
+              onClick={() => handleImageClick(image)}
+            />
+          ))}
         </div>
 
       
@@ -47,7 +59,7 @@ const PerProduct: React.FC<PerProductProps> = ({
       </div>
 
       <div className='w-1/2 pr-24 pt-10'>
-        <img src={productImage} alt={productName} style={{ maxHeight: '524px' }} />
+        <img src={mainImage} alt={productName} style={{ maxHeight: '524px' }} />
       </div>
      
     </div>
