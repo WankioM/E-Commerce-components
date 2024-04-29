@@ -1,6 +1,7 @@
 
 import React, {useState} from 'react';
 import HeartIcon from '../../Assets/heart-solid.svg';
+import NextBack from '../../Assets/icons8-next-100.png'
 
 
 interface PerProductProps {
@@ -27,6 +28,8 @@ const PerProduct: React.FC<PerProductProps> = ({
 
   return (
     <div className="flex flex-row bg-sage items-center pt-5">
+
+      <img src={NextBack} alt='Next' style={{ maxHeight: '30px', marginLeft: '40px', transform: 'rotate(180deg)' , }}/>
       
       <div className=' flex flex-col w-1/2 p-12 m-10  '>
         
@@ -61,6 +64,8 @@ const PerProduct: React.FC<PerProductProps> = ({
       <div className='w-1/2 pr-24 pt-10'>
         <img src={mainImage} alt={productName} style={{ maxHeight: '524px' }} />
       </div>
+
+      <img src={NextBack} alt='Next' style={{ maxHeight: '30px', marginRight: '40px'}}/>
      
     </div>
   );
