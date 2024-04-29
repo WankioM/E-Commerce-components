@@ -13,6 +13,9 @@ const NavBar: React.FC<NavBarProps> = ({}) => {
       {/* Replace this with your Navbar content */}
      
       <ul className='text-left font-GlacialIndifference_regular'>
+      <li className='text-left font-GlacialIndifference_regular' >
+          Home
+        </li>
         <li className='text-left font-GlacialIndifference_regular' >
           About
         </li>

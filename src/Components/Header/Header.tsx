@@ -44,7 +44,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
           <input 
             type="text" // Set input type to text
             placeholder="Search..." // Optional placeholder text
-            className="flex-grow bg-transparent px-4 py-2 m-1 rounded-lg" // Tailwind CSS classes for styling
+            className="flex-grow bg-transparent px-4 py-2 m-1 rounded-lg text-oxfordblue" // Tailwind CSS classes for styling
 
           />
           <button className="flex items-center justify-center">
